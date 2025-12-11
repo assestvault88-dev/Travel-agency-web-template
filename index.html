@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust | Adventure Travel</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Wanderlust is a premium travel agency template offering adventurous tours to the Himalayas, Swiss Alps, and more. Book your next life-changing experience.">
+    <meta name="keywords"
+        content="Travel Agency, Adventure Tours, Trekking, Safari, Holiday Template, HTML Template, Wanderlust">
+    <meta name="author" content="Wanderlust Agencies">
+    <meta property="og:title" content="Wanderlust | Adventure Travel Agency Template">
+    <meta property="og:description" content="Discover extraordinary destinations with our premium travel packages.">
+    <meta property="og:image" content="image/image.png">
+    <meta property="og:type" content="website">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header style="position: absolute; width: 100%; top: 0; z-index: 1000;">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">WANDERLUST.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="destinations.html" class="btn btn-primary">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Video Background -->
+            <video autoplay muted loop id="hero-video">
+                <source src="image/travelvid1.mp4" type="video/mp4">
+                <!-- Fallback Image if video fails -->
+                <img src="image/image.png" alt="Travel Background"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </video>
+            <div class="hero-overlay"></div>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h1 class="hero-title">Discover the Extraordinary</h1>
+                <p class="hero-subtitle">Experience the world's most breathtaking adventures with exclusive tours.</p>
+
+                <!-- Search Widget -->
+                <div class="hero-widget">
+                    <input type="text" placeholder="Where do you want to go?">
+                    <button class="btn btn-accent">Explore</button>
+                </div>
+            </div>
+
+            <!-- Currency Converter Widget (Mock) -->
+            <div class="glass-panel currency-widget">
+                <h4 style="color: var(--color-accent-teal); margin-bottom: 15px;">Currency Converter</h4>
+                <div class="currency-form">
+                    <div class="currency-row">
+                        <select id="currency-from" class="currency-select">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+                        <input type="number" id="currency-amount" class="currency-input" value="1" min="1">
+                    </div>
+                    <div style="text-align: center; color: rgba(255,255,255,0.5);">to</div>
+                    <div class="currency-row">
+                        <select id="currency-to" class="currency-select">
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="INR">INR</option>
+                        </select>
+                    </div>
+                    <div id="currency-result" class="currency-result">
+                        €0.92
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Destinations -->
+        <section class="section container">
+            <h2 class="text-center">Trending <span class="text-accent">Adventures</span></h2>
+            <p class="text-center" style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto;">Explore
+                our most popular eco-friendly and exotic tours handpicked for the true explorer.</p>
+
+            <div class="destinations-grid">
+                <!-- Card 1 -->
+                <div class="tour-card">
+                    <div style="overflow: hidden;">
+                        <img src="image/image.png" alt="Himalayan Trek" class="tour-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 14 Days</span>
+                            <span class="rating">★★★★★ (48)</span>
+                        </div>
+                        <h3 class="card-title">Himalayan Base Camp</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 15px;">
+                            Conquer the heights in this breathtaking trek through the roof of the world.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-price">$1,299</span>
+                            <a href="pricing.html" class="btn btn-accent"
+                                style="padding: 8px 20px; font-size: 0.8rem;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="tour-card">
+                    <div style="overflow: hidden;">
+                        <img src="image/image copy.png" alt="African Safari" class="tour-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 7 Days</span>
+                            <span class="rating">★★★★☆ (32)</span>
+                        </div>
+                        <h3 class="card-title">Serengeti Safari</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 15px;">
+                            Witness the Great Migration and the Big Five in their natural habitat.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-price">$2,450</span>
+                            <a href="pricing.html" class="btn btn-accent"
+                                style="padding: 8px 20px; font-size: 0.8rem;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="tour-card">
+                    <div style="overflow: hidden;">
+                        <img src="image/image copy 2.png" alt="Island Escape" class="tour-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 10 Days</span>
+                            <span class="rating">★★★★★ (102)</span>
+                        </div>
+                        <h3 class="card-title">Bali Spirit Retreat</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 15px;">
+                            Rejuvenate your soul with yoga, pristine beaches, and lush jungles.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-price">$950</span>
+                            <a href="pricing.html" class="btn btn-accent"
+                                style="padding: 8px 20px; font-size: 0.8rem;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="tour-card">
+                    <div style="overflow: hidden;">
+                        <img src="image/image copy 3.png" alt="Swiss Alps" class="tour-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 6 Days</span>
+                            <span class="rating">★★★★★ (24)</span>
+                        </div>
+                        <h3 class="card-title">Alpine Heights</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 15px;">
+                            Traverse the pristine peaks and valleys of the Swiss Alps in luxury.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-price">$1,850</span>
+                            <a href="pricing.html" class="btn btn-accent"
+                                style="padding: 8px 20px; font-size: 0.8rem;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="tour-card">
+                    <div style="overflow: hidden;">
+                        <img src="image/image copy 5.png" alt="Desert Night" class="tour-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 4 Days</span>
+                            <span class="rating">★★★★★ (18)</span>
+                        </div>
+                        <h3 class="card-title">Nubian Desert Stargazing</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 15px;">
+                            A mystical journey through the sands under a canopy of stars.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-price">$890</span>
+                            <a href="pricing.html" class="btn btn-accent"
+                                style="padding: 8px 20px; font-size: 0.8rem;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="tour-card">
+                    <div style="overflow: hidden;">
+                        <img src="image/image copy 6.png" alt="Northern Lights" class="tour-image">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span><i class="fas fa-clock"></i> 8 Days</span>
+                            <span class="rating">★★★★★ (56)</span>
+                        </div>
+                        <h3 class="card-title">Aurora Borealis Hunt</h3>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 15px;">
+                            Chase the northern lights across the frozen tundra of the Arctic.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-price">$2,100</span>
+                            <a href="pricing.html" class="btn btn-accent"
+                                style="padding: 8px 20px; font-size: 0.8rem;">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--spacing-md);">
+                <a href="destinations.html" class="btn btn-primary">View All Tours</a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container testimonial-wrapper">
+                <div class="testimonial-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">
+                        "I've traveled to over 30 countries, but the expedition I booked through Wanderlust was truly
+                        life-changing.
+                        The guides were experts, the locations were untouched, and the seamless service let me focus
+                        purely on the adventure."
+                    </p>
+                    <div class="client-info">
+                        <!-- Placeholder avatar -->
+                        <div
+                            style="width: 60px; height: 60px; background: #ddd; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333;">
+                            JD</div>
+                        <div class="client-name">John Doe</div>
+                        <div style="font-size: 0.8rem; color: var(--color-text-secondary);">Adventure Photographer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container" style="position: relative; z-index: 2;">
+                <h2 class="cta-title">Ready for your next <span class="text-accent">Odyssey</span>?</h2>
+                <p
+                    style="color: var(--color-text-main); margin-bottom: var(--spacing-md); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Join thousands of travelers who have discovered the world's hidden gems with us. Your adventure
+                    awaits.
+                </p>
+                <div style="display: flex; gap: 20px; justify-content: center;">
+                    <a href="destinations.html" class="btn btn-accent">Book Now</a>
+                    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+        style="background: var(--color-bg-dark); padding: var(--spacing-lg) 0; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-md);">
+            <div>
+                <a href="#" class="logo" style="font-size: 1.2rem;">WANDERLUST.</a>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: var(--color-text-secondary);">Calculated
+                    adventures for the modern explorer.</p>
+            </div>
+            <div>
+                <h4 style="font-size: 1rem;">Company</h4>
+                <ul style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="font-size: 1rem;">Support</h4>
+                <ul style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="README.md" target="_blank">Documentation</a></li>
+                    <li><a href="LICENSE.md" target="_blank">License & Refund Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="font-size: 1rem;">Newsletter</h4>
+                <div style="display: flex; margin-top: 10px;">
+                    <input type="email" placeholder="Your email"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 8px; color: white; border-radius: 4px 0 0 4px; width: 100%;">
+                    <button class="btn btn-accent"
+                        style="padding: 8px 15px; border-radius: 0 4px 4px 0; font-size: 0.8rem;">Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center"
+            style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.8rem; color: var(--color-text-secondary);">
+            &copy; 2025 Wanderlust Agencies. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

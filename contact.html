@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wanderlust</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Get in touch with Wanderlust Agencies. We are here to help you plan your next adventure. Contact us for quotes and inquiries.">
+    <meta name="keywords" content="Contact Travel Agency, Adventure Booking Support, Travel Inquiries">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header style="position: absolute; width: 100%; top: 0; z-index: 1000;">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">WANDERLUST.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="destinations.html" class="btn btn-primary">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('image/image copy 2.png');">
+        <div class="overlay"></div>
+        <div class="container page-header-content text-center">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">We'd love to hear about your dream adventure.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container section">
+        <div class="contact-grid">
+            <!-- Contact Info & Form -->
+            <div class="glass-panel">
+                <h2 class="section-title">Send us a Message</h2>
+                <form>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                        <div>
+                            <label style="display: block; margin-bottom: 5px;">Name</label>
+                            <input type="text" class="currency-input" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 5px;">Email</label>
+                            <input type="email" class="currency-input" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px;">Subject</label>
+                        <select class="currency-select">
+                            <option>General Inquiry</option>
+                            <option>Booking Issue</option>
+                            <option>Partnership</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px;">Message</label>
+                        <textarea class="currency-input" rows="5" placeholder="How can we help?"></textarea>
+                    </div>
+                    <button class="btn btn-accent">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div class="glass-panel">
+                    <h3 style="margin-bottom: 15px; color: var(--color-accent-teal);">Contact Info</h3>
+                    <p style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt"
+                            style="width: 25px; color: var(--color-accent-orange);"></i> 123 Adventure Lane, Wild City,
+                        Earth</p>
+                    <p style="margin-bottom: 10px;"><i class="fas fa-envelope"
+                            style="width: 25px; color: var(--color-accent-orange);"></i> hello@wanderlust.com</p>
+                    <p><i class="fas fa-phone" style="width: 25px; color: var(--color-accent-orange);"></i> +1 (555)
+                        123-4567</p>
+                </div>
+
+                <div class="glass-panel">
+                    <h3 style="margin-bottom: 15px; color: var(--color-accent-teal);">FAQ</h3>
+                    <div class="faq-item">
+                        <h4 style="font-size: 1rem; margin-bottom: 5px; cursor: pointer;">Do you offer refunds?</h4>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Yes, up to 30 days before
+                            departure with a 10% fee.</p>
+                    </div>
+                    <div class="faq-item" style="margin-top: 15px;">
+                        <h4 style="font-size: 1rem; margin-bottom: 5px; cursor: pointer;">Is travel insurance included?
+                        </h4>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">Basic medical is included, but
+                            we recommend full coverage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+        style="background: var(--color-bg-dark); padding: var(--spacing-lg) 0; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-md);">
+            <div>
+                <a href="#" class="logo" style="font-size: 1.2rem;">WANDERLUST.</a>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: var(--color-text-secondary);">Calculated
+                    adventures for the modern explorer.</p>
+            </div>
+            <div>
+                <h4 style="font-size: 1rem;">Company</h4>
+                <ul style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="font-size: 1rem;">Support</h4>
+                <ul style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="README.md" target="_blank">Documentation</a></li>
+                    <li><a href="LICENSE.md" target="_blank">License & Refund Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="font-size: 1rem;">Newsletter</h4>
+                <div style="display: flex; margin-top: 10px;">
+                    <input type="email" placeholder="Your email"
+                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 8px; color: white; border-radius: 4px 0 0 4px; width: 100%;">
+                    <button class="btn btn-accent"
+                        style="padding: 8px 15px; border-radius: 0 4px 4px 0; font-size: 0.8rem;">Go</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center"
+            style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.8rem; color: var(--color-text-secondary);">
+            &copy; 2025 Wanderlust Agencies. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
